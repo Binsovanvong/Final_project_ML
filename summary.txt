@@ -1,0 +1,7 @@
+Project: Predicting High-Value Orders in Balaji Fast Food Sales
+Dataset size: 1000 rows, 18 original columns
+Date range: 2022-01-04 to 2023-12-03
+Missing transaction_type: 107 rows
+Target threshold: 240
+Best model: Decision Tree
+Best test F1: 0.7396 | Accuracy: 0.75 | ROC-AUC: 0.7814
