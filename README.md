@@ -100,7 +100,7 @@ You can adjust this section to match your real group members.
 
 ### Example for 2 students
 - **Student A:** Logistic Regression + EDA
-- **Student B:** Decision Tree + Random Forest + Slides
+- **Student B:** Decision Trees + Random Forest + Slides
 
 ### Example for 3 students
 - **Student A:** Logistic Regression
