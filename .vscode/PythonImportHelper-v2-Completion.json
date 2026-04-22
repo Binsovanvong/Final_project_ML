@@ -1,0 +1,612 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StratifiedKFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "ColumnTransformer",
+        "importPath": "sklearn.compose",
+        "description": "sklearn.compose",
+        "isExtraImport": true,
+        "detail": "sklearn.compose",
+        "documentation": {}
+    },
+    {
+        "label": "Pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "OneHotEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "GradientBoostingClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "parse_mixed_date",
+        "kind": 2,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "def parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')\n    if '/' in s:\n        return pd.to_datetime(s, format='%m/%d/%Y', errors='coerce')\n    return pd.to_datetime(s, errors='coerce')\ndf['date_parsed'] = df['date'].apply(parse_mixed_date)\ndf['month'] = df['date_parsed'].dt.month\ndf['day'] = df['date_parsed'].dt.day",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "ROOT = Path('/mnt/data/balaji_ml_project')\nFIG = ROOT / 'figures'\nDATA = ROOT / 'data'\nRAW = Path('/mnt/data/Balaji Fast Food Sales.csv')\nshutil.copy2(RAW, DATA / 'Balaji Fast Food Sales.csv')\ndf = pd.read_csv(RAW)\ndef parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "FIG",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "FIG = ROOT / 'figures'\nDATA = ROOT / 'data'\nRAW = Path('/mnt/data/Balaji Fast Food Sales.csv')\nshutil.copy2(RAW, DATA / 'Balaji Fast Food Sales.csv')\ndf = pd.read_csv(RAW)\ndef parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')\n    if '/' in s:",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "DATA",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "DATA = ROOT / 'data'\nRAW = Path('/mnt/data/Balaji Fast Food Sales.csv')\nshutil.copy2(RAW, DATA / 'Balaji Fast Food Sales.csv')\ndf = pd.read_csv(RAW)\ndef parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')\n    if '/' in s:\n        return pd.to_datetime(s, format='%m/%d/%Y', errors='coerce')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "RAW",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "RAW = Path('/mnt/data/Balaji Fast Food Sales.csv')\nshutil.copy2(RAW, DATA / 'Balaji Fast Food Sales.csv')\ndf = pd.read_csv(RAW)\ndef parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')\n    if '/' in s:\n        return pd.to_datetime(s, format='%m/%d/%Y', errors='coerce')\n    return pd.to_datetime(s, errors='coerce')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df = pd.read_csv(RAW)\ndef parse_mixed_date(x):\n    s = str(x)\n    if '-' in s:\n        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')\n    if '/' in s:\n        return pd.to_datetime(s, format='%m/%d/%Y', errors='coerce')\n    return pd.to_datetime(s, errors='coerce')\ndf['date_parsed'] = df['date'].apply(parse_mixed_date)\ndf['month'] = df['date_parsed'].dt.month",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['date_parsed']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['date_parsed'] = df['date'].apply(parse_mixed_date)\ndf['month'] = df['date_parsed'].dt.month\ndf['day'] = df['date_parsed'].dt.day\ndf['dayofweek'] = df['date_parsed'].dt.dayofweek\ndf['day_name'] = df['date_parsed'].dt.day_name()\ndf['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['month']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['month'] = df['date_parsed'].dt.month\ndf['day'] = df['date_parsed'].dt.day\ndf['dayofweek'] = df['date_parsed'].dt.dayofweek\ndf['day_name'] = df['date_parsed'].dt.day_name()\ndf['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['day']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['day'] = df['date_parsed'].dt.day\ndf['dayofweek'] = df['date_parsed'].dt.dayofweek\ndf['day_name'] = df['date_parsed'].dt.day_name()\ndf['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['dayofweek']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['dayofweek'] = df['date_parsed'].dt.dayofweek\ndf['day_name'] = df['date_parsed'].dt.day_name()\ndf['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['day_name']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['day_name'] = df['date_parsed'].dt.day_name()\ndf['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['weekend']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\ndf['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),\n    'missing_transaction_type': int(df['transaction_type'].isna().sum()),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['quarter']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['quarter'] = df['date_parsed'].dt.quarter\nmedian_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),\n    'missing_transaction_type': int(df['transaction_type'].isna().sum()),\n    'unique_items': int(df['item_name'].nunique()),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "median_amount",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "median_amount = float(df['transaction_amount'].median())\ndf['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),\n    'missing_transaction_type': int(df['transaction_type'].isna().sum()),\n    'unique_items': int(df['item_name'].nunique()),\n    'median_transaction_amount': median_amount,",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "df['high_value_order']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "df['high_value_order'] = (df['transaction_amount'] >= median_amount).astype(int)\nsummary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),\n    'missing_transaction_type': int(df['transaction_type'].isna().sum()),\n    'unique_items': int(df['item_name'].nunique()),\n    'median_transaction_amount': median_amount,\n    'class_balance_high_value': float(df['high_value_order'].mean()),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "summary",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "summary = {\n    'rows': int(df.shape[0]),\n    'columns': int(df.shape[1]),\n    'date_min': str(df['date_parsed'].min().date()),\n    'date_max': str(df['date_parsed'].max().date()),\n    'missing_transaction_type': int(df['transaction_type'].isna().sum()),\n    'unique_items': int(df['item_name'].nunique()),\n    'median_transaction_amount': median_amount,\n    'class_balance_high_value': float(df['high_value_order'].mean()),\n    'top_items_by_revenue': df.groupby('item_name')['transaction_amount'].sum().sort_values(ascending=False).head(5).to_dict(),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams['figure.dpi']",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "plt.rcParams['figure.dpi'] = 150\nitem_rev = df.groupby('item_name')['transaction_amount'].sum().sort_values(ascending=False)\nplt.figure(figsize=(8, 4.8))\nitem_rev.plot(kind='bar')\nplt.title('Revenue by Menu Item')\nplt.ylabel('Revenue')\nplt.xlabel('Item')\nplt.xticks(rotation=30, ha='right')\nplt.tight_layout()\nplt.savefig(FIG / 'revenue_by_item.png', bbox_inches='tight')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "item_rev",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "item_rev = df.groupby('item_name')['transaction_amount'].sum().sort_values(ascending=False)\nplt.figure(figsize=(8, 4.8))\nitem_rev.plot(kind='bar')\nplt.title('Revenue by Menu Item')\nplt.ylabel('Revenue')\nplt.xlabel('Item')\nplt.xticks(rotation=30, ha='right')\nplt.tight_layout()\nplt.savefig(FIG / 'revenue_by_item.png', bbox_inches='tight')\nplt.close()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "order_time",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "order_time = df['time_of_sale'].value_counts().reindex(['Morning', 'Afternoon', 'Evening', 'Night', 'Midnight'])\nplt.figure(figsize=(8, 4.8))\norder_time.plot(kind='bar')\nplt.title('Order Count by Time of Sale')\nplt.ylabel('Number of Orders')\nplt.xlabel('Time of Sale')\nplt.xticks(rotation=0)\nplt.tight_layout()\nplt.savefig(FIG / 'orders_by_time.png', bbox_inches='tight')\nplt.close()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "monthly_revenue",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "monthly_revenue = df.groupby(df['date_parsed'].dt.to_period('M'))['transaction_amount'].sum().sort_index()\nplt.figure(figsize=(9, 4.8))\nmonthly_revenue.index = monthly_revenue.index.astype(str)\nmonthly_revenue.plot(marker='o')\nplt.title('Monthly Revenue Trend')\nplt.ylabel('Revenue')\nplt.xlabel('Month')\nplt.xticks(rotation=45, ha='right')\nplt.tight_layout()\nplt.savefig(FIG / 'monthly_revenue.png', bbox_inches='tight')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "monthly_revenue.index",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "monthly_revenue.index = monthly_revenue.index.astype(str)\nmonthly_revenue.plot(marker='o')\nplt.title('Monthly Revenue Trend')\nplt.ylabel('Revenue')\nplt.xlabel('Month')\nplt.xticks(rotation=45, ha='right')\nplt.tight_layout()\nplt.savefig(FIG / 'monthly_revenue.png', bbox_inches='tight')\nplt.close()\ntrans_dist = df['transaction_type'].fillna('Missing').value_counts()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "trans_dist",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "trans_dist = df['transaction_type'].fillna('Missing').value_counts()\nplt.figure(figsize=(6.5, 4.8))\ntrans_dist.plot(kind='bar')\nplt.title('Transaction Type Distribution')\nplt.ylabel('Count')\nplt.xlabel('Transaction Type')\nplt.xticks(rotation=0)\nplt.tight_layout()\nplt.savefig(FIG / 'transaction_type_distribution.png', bbox_inches='tight')\nplt.close()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "class_dist",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "class_dist = df['high_value_order'].map({0: 'Low Value', 1: 'High Value'}).value_counts()\nplt.figure(figsize=(6.5, 4.8))\nclass_dist.plot(kind='bar')\nplt.title('Target Class Balance')\nplt.ylabel('Count')\nplt.xlabel('Order Class')\nplt.xticks(rotation=0)\nplt.tight_layout()\nplt.savefig(FIG / 'target_balance.png', bbox_inches='tight')\nplt.close()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "features = ['item_name', 'item_type', 'item_price', 'transaction_type', 'received_by', 'time_of_sale', 'month', 'day', 'dayofweek', 'weekend', 'quarter']\nX = df[features]\ny = df['high_value_order']\ncat_cols = ['item_name', 'item_type', 'transaction_type', 'received_by', 'time_of_sale']\nnum_cols = [c for c in features if c not in cat_cols]\npreprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "X = df[features]\ny = df['high_value_order']\ncat_cols = ['item_name', 'item_type', 'transaction_type', 'received_by', 'time_of_sale']\nnum_cols = [c for c in features if c not in cat_cols]\npreprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),\n    ('num', Pipeline([",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "y = df['high_value_order']\ncat_cols = ['item_name', 'item_type', 'transaction_type', 'received_by', 'time_of_sale']\nnum_cols = [c for c in features if c not in cat_cols]\npreprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),\n    ('num', Pipeline([\n        ('imputer', SimpleImputer(strategy='median')),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "cat_cols",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "cat_cols = ['item_name', 'item_type', 'transaction_type', 'received_by', 'time_of_sale']\nnum_cols = [c for c in features if c not in cat_cols]\npreprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),\n    ('num', Pipeline([\n        ('imputer', SimpleImputer(strategy='median')),\n        ('scaler', StandardScaler())",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "num_cols",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "num_cols = [c for c in features if c not in cat_cols]\npreprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),\n    ('num', Pipeline([\n        ('imputer', SimpleImputer(strategy='median')),\n        ('scaler', StandardScaler())\n    ]), num_cols)",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "preprocess = ColumnTransformer([\n    ('cat', Pipeline([\n        ('imputer', SimpleImputer(strategy='most_frequent')),\n        ('onehot', OneHotEncoder(handle_unknown='ignore'))\n    ]), cat_cols),\n    ('num', Pipeline([\n        ('imputer', SimpleImputer(strategy='median')),\n        ('scaler', StandardScaler())\n    ]), num_cols)\n])",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "cv",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\npipelines = {\n    'Logistic Regression': Pipeline([('preprocess', preprocess), ('model', LogisticRegression(max_iter=2000, random_state=42))]),\n    'Decision Tree': Pipeline([('preprocess', preprocess), ('model', DecisionTreeClassifier(random_state=42))]),\n    'Random Forest': Pipeline([('preprocess', preprocess), ('model', RandomForestClassifier(random_state=42, n_jobs=1))]),\n    'Gradient Boosting': Pipeline([('preprocess', preprocess), ('model', GradientBoostingClassifier(random_state=42))]),\n}\nparam_grids = {\n    'Logistic Regression': {'model__C': [0.1, 1.0, 10.0], 'model__solver': ['liblinear']},\n    'Decision Tree': {'model__max_depth': [3, 5, None], 'model__min_samples_split': [2, 10]},",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "pipelines",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "pipelines = {\n    'Logistic Regression': Pipeline([('preprocess', preprocess), ('model', LogisticRegression(max_iter=2000, random_state=42))]),\n    'Decision Tree': Pipeline([('preprocess', preprocess), ('model', DecisionTreeClassifier(random_state=42))]),\n    'Random Forest': Pipeline([('preprocess', preprocess), ('model', RandomForestClassifier(random_state=42, n_jobs=1))]),\n    'Gradient Boosting': Pipeline([('preprocess', preprocess), ('model', GradientBoostingClassifier(random_state=42))]),\n}\nparam_grids = {\n    'Logistic Regression': {'model__C': [0.1, 1.0, 10.0], 'model__solver': ['liblinear']},\n    'Decision Tree': {'model__max_depth': [3, 5, None], 'model__min_samples_split': [2, 10]},\n    'Random Forest': {'model__n_estimators': [100, 200], 'model__max_depth': [5, None]},",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "param_grids",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "param_grids = {\n    'Logistic Regression': {'model__C': [0.1, 1.0, 10.0], 'model__solver': ['liblinear']},\n    'Decision Tree': {'model__max_depth': [3, 5, None], 'model__min_samples_split': [2, 10]},\n    'Random Forest': {'model__n_estimators': [100, 200], 'model__max_depth': [5, None]},\n    'Gradient Boosting': {'model__n_estimators': [100], 'model__learning_rate': [0.05, 0.1], 'model__max_depth': [2, 3]},\n}\nresults = []\nroc_payload = {}\nconf_mats = {}\nbest_estimators = {}",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "results = []\nroc_payload = {}\nconf_mats = {}\nbest_estimators = {}\nbest_params = {}\nfor model_name, pipe in pipelines.items():\n    print('Training', model_name, flush=True)\n    grid = GridSearchCV(pipe, param_grid=param_grids[model_name], scoring='f1', cv=cv, n_jobs=1, verbose=0)\n    grid.fit(X_train, y_train)\n    best = grid.best_estimator_",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "roc_payload",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "roc_payload = {}\nconf_mats = {}\nbest_estimators = {}\nbest_params = {}\nfor model_name, pipe in pipelines.items():\n    print('Training', model_name, flush=True)\n    grid = GridSearchCV(pipe, param_grid=param_grids[model_name], scoring='f1', cv=cv, n_jobs=1, verbose=0)\n    grid.fit(X_train, y_train)\n    best = grid.best_estimator_\n    best_estimators[model_name] = best",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "conf_mats",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "conf_mats = {}\nbest_estimators = {}\nbest_params = {}\nfor model_name, pipe in pipelines.items():\n    print('Training', model_name, flush=True)\n    grid = GridSearchCV(pipe, param_grid=param_grids[model_name], scoring='f1', cv=cv, n_jobs=1, verbose=0)\n    grid.fit(X_train, y_train)\n    best = grid.best_estimator_\n    best_estimators[model_name] = best\n    best_params[model_name] = grid.best_params_",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "best_estimators",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "best_estimators = {}\nbest_params = {}\nfor model_name, pipe in pipelines.items():\n    print('Training', model_name, flush=True)\n    grid = GridSearchCV(pipe, param_grid=param_grids[model_name], scoring='f1', cv=cv, n_jobs=1, verbose=0)\n    grid.fit(X_train, y_train)\n    best = grid.best_estimator_\n    best_estimators[model_name] = best\n    best_params[model_name] = grid.best_params_\n    y_pred = best.predict(X_test)",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "best_params",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "best_params = {}\nfor model_name, pipe in pipelines.items():\n    print('Training', model_name, flush=True)\n    grid = GridSearchCV(pipe, param_grid=param_grids[model_name], scoring='f1', cv=cv, n_jobs=1, verbose=0)\n    grid.fit(X_train, y_train)\n    best = grid.best_estimator_\n    best_estimators[model_name] = best\n    best_params[model_name] = grid.best_params_\n    y_pred = best.predict(X_test)\n    y_prob = best.predict_proba(X_test)[:, 1] if hasattr(best.named_steps['model'], 'predict_proba') else None",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "results_df",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "results_df = pd.DataFrame(results).sort_values(['F1_Score', 'Accuracy'], ascending=False).reset_index(drop=True)\nresults_df.to_csv(ROOT / 'model_comparison.csv', index=False)\nbest_model_name = results_df.iloc[0]['Model']\nbest_model = best_estimators[best_model_name]\nplt.figure(figsize=(7.5, 5.5))\nfor name, payload in roc_payload.items():\n    plt.plot(payload['fpr'], payload['tpr'], label=f\"{name} (AUC={payload['auc']:.3f})\")\nplt.plot([0, 1], [0, 1], linestyle='--')\nplt.title('ROC Curve Comparison')\nplt.xlabel('False Positive Rate')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "best_model_name",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "best_model_name = results_df.iloc[0]['Model']\nbest_model = best_estimators[best_model_name]\nplt.figure(figsize=(7.5, 5.5))\nfor name, payload in roc_payload.items():\n    plt.plot(payload['fpr'], payload['tpr'], label=f\"{name} (AUC={payload['auc']:.3f})\")\nplt.plot([0, 1], [0, 1], linestyle='--')\nplt.title('ROC Curve Comparison')\nplt.xlabel('False Positive Rate')\nplt.ylabel('True Positive Rate')\nplt.legend(fontsize=8)",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "best_model",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "best_model = best_estimators[best_model_name]\nplt.figure(figsize=(7.5, 5.5))\nfor name, payload in roc_payload.items():\n    plt.plot(payload['fpr'], payload['tpr'], label=f\"{name} (AUC={payload['auc']:.3f})\")\nplt.plot([0, 1], [0, 1], linestyle='--')\nplt.title('ROC Curve Comparison')\nplt.xlabel('False Positive Rate')\nplt.ylabel('True Positive Rate')\nplt.legend(fontsize=8)\nplt.tight_layout()",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "axes",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "axes = axes.flatten()\nfor ax, name in zip(axes, [r['Model'] for r in results]):\n    cm = np.array(conf_mats[name])\n    ax.imshow(cm)\n    ax.set_title(name, fontsize=10)\n    ax.set_xlabel('Predicted')\n    ax.set_ylabel('Actual')\n    ax.set_xticks([0, 1], ['Low', 'High'])\n    ax.set_yticks([0, 1], ['Low', 'High'])\n    for i in range(2):",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "model = best_model.named_steps['model']\nfeature_names = best_model.named_steps['preprocess'].get_feature_names_out()\nif hasattr(model, 'feature_importances_'):\n    scores = model.feature_importances_\nelse:\n    scores = np.abs(model.coef_[0])\nimp_df = pd.DataFrame({'feature': feature_names, 'importance': scores}).sort_values('importance', ascending=False).head(12)\nimp_df.to_csv(ROOT / 'top_features.csv', index=False)\nplt.figure(figsize=(8.5, 5.5))\nplt.barh(imp_df['feature'][::-1], imp_df['importance'][::-1])",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "feature_names",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "feature_names = best_model.named_steps['preprocess'].get_feature_names_out()\nif hasattr(model, 'feature_importances_'):\n    scores = model.feature_importances_\nelse:\n    scores = np.abs(model.coef_[0])\nimp_df = pd.DataFrame({'feature': feature_names, 'importance': scores}).sort_values('importance', ascending=False).head(12)\nimp_df.to_csv(ROOT / 'top_features.csv', index=False)\nplt.figure(figsize=(8.5, 5.5))\nplt.barh(imp_df['feature'][::-1], imp_df['importance'][::-1])\nplt.title(f'Top Predictive Features - {best_model_name}')",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "imp_df",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "imp_df = pd.DataFrame({'feature': feature_names, 'importance': scores}).sort_values('importance', ascending=False).head(12)\nimp_df.to_csv(ROOT / 'top_features.csv', index=False)\nplt.figure(figsize=(8.5, 5.5))\nplt.barh(imp_df['feature'][::-1], imp_df['importance'][::-1])\nplt.title(f'Top Predictive Features - {best_model_name}')\nplt.xlabel('Importance')\nplt.tight_layout()\nplt.savefig(FIG / 'feature_importance.png', bbox_inches='tight')\nplt.close()\npayload = {",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    },
+    {
+        "label": "payload",
+        "kind": 5,
+        "importPath": "src.analyze_and_build",
+        "description": "src.analyze_and_build",
+        "peekOfCode": "payload = {\n    'problem_type': 'classification',\n    'project_title': 'Predicting High-Value Orders in Balaji Fast Food Sales',\n    'target_definition': f'high_value_order = 1 if transaction_amount >= {median_amount:.0f}, else 0',\n    'leakage_note': 'Quantity and transaction_amount are excluded from the feature set to avoid direct target leakage.',\n    'features_used': features,\n    'train_size': int(len(X_train)),\n    'test_size': int(len(X_test)),\n    'best_model': best_model_name,\n    'best_model_metrics': results_df.iloc[0].to_dict(),",
+        "detail": "src.analyze_and_build",
+        "documentation": {}
+    }
+]
